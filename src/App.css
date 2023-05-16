@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Barlow", sans-serif;
+}
+body {
+  background: #fff;
+  min-height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #fef5ac !important;
+  padding: 20px 32px;
+  text-align: left;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.headerh1 {
+  color: yellow;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height: 7rem;
+  margin-top: 42rem;
+  background-color: #fef5ac;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+  color: rgb(22, 20, 20);
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+.footer-i {
+  font-size: 1.5rem;
+  padding: 2rem 1.5rem 0 0;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+.footer-i:hover {
+  color: #000;
+}
+.note {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px 25px 10px 25px;
+  text-align: center;
+  width: 300px;
+  margin: 4rem 0 3rem 3rem;
+  float: left;
+  font-family: "Roboto Slab", serif;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin: 5px 0 25px 0;
+  font-weight: bold;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.icons {
+  margin: 0 2.5rem 0 1.5rem;
+}
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 520px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  font-family: "Roboto Slab", serif;
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 0px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  margin-top: 0.5rem;
+}
+.titleinput {
+  margin-bottom: 1.2rem;
+}
+form.create-note button {
+  font-family: "Roboto Slab", serif;
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 25%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+form button:hover {
+  background-color: #000;
+}
+.deletebutton {
+  background-color: #fff;
+}
+.deletebutton:hover {
+  font-size: 1.2rem;
+}
+.DateStyle {
+  font-size: 1.5rem;
+  margin-right: 4rem;
+  text-align: right;
+  width: 100%;
+}
+.clockicon {
+  margin-right: 1rem;
+}
+
+/* Media Query */
+@media screen and (min-width: 100px) and (max-width: 380px) {
+  form.create-note {
+    width: 300px;
+  }
+  .headerh1 {
+    font-size: 1.5rem;
+    margin-left: -3rem;
+  }
+  .icons {
+    margin-right: 1rem;
+  }
+  .DateStyle {
+    display: none;
+  }
+  footer {
+    margin-top: 30rem;
+  }
+  .note {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 480px) {
+  form.create-note {
+    width: 300px;
+  }
+  .headerh1 {
+    font-size: 1.5rem;
+    margin-left: -3rem;
+  }
+  .icons {
+    margin-right: 1rem;
+  }
+  .DateStyle {
+    display: none;
+  }
+  footer {
+    margin-top: 37rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 667px) {
+  .headerh1 {
+    font-size: 1.5rem;
+    margin-left: -3rem;
+  }
+  .icons {
+    margin-right: 1rem;
+  }
+  .DateStyle {
+    margin: -1.4rem 0 0 6.2rem;
+  }
+  .note {
+    width: 260px;
+  }
+}
+@media screen and (min-width: 668px) and (max-width: 769px) {
+  .headerh1 {
+    font-size: 1.5rem;
+    margin-left: -3rem;
+  }
+  .icons {
+    margin-right: 1rem;
+  }
+  .DateStyle {
+    margin: -1.4rem 0 0 7.7rem;
+  }
+  footer {
+    margin-top: 45rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 821px) {
+  .headerh1 {
+    font-size: 1.5rem;
+    margin-left: -3rem;
+  }
+  .icons {
+    margin-right: 1rem;
+  }
+  .DateStyle {
+    margin: -1.4rem 0 0 8.7rem;
+  }
+  footer {
+    margin-top: 55rem;
+  }
+}
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .headerh1 {
+    font-size: 1.5rem;
+    margin-left: -3rem;
+  }
+  .icons {
+    margin-right: 1rem;
+  }
+  .DateStyle {
+    margin: -1.4rem 0 0 9.1rem;
+  }
+  footer {
+    margin-top: 70rem;
+  }
+  .note {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .headerh1 {
+    font-size: 1.5rem;
+    margin-left: -12rem;
+  }
+  .headericons {
+    width: 10%;
+  }
+  .icons {
+    margin-right: 1rem;
+  }
+  .DateStyle {
+    margin: -0.3rem 0 0 5rem;
+  }
+  footer {
+    margin-top: 43rem;
+  }
+}
